@@ -47,8 +47,21 @@ svg {
 
 
 /* Pseudoelementos CSS */
+.dialogo::selection {
+	background: #D61A1A;
+}
 
-
+.dialogo::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -40px;
+	border-top: 20px solid var(--fondoPrimario);
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	right: calc(50% - 20px);
+}
 
 
 .boton {
